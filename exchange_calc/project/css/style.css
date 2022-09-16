@@ -1,0 +1,237 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@font-face {
+    font-family: "mm";
+    font-weight: normal;
+    src: url('./fonts/MyanamarSagar.ttf');
+}
+
+@font-face {
+    font-family: "mm";
+    font-weight: bold;
+    src: url("./fonts/Pyidaungsu-1.8.3_Bold.ttf");
+}
+
+.mm{
+    font-family: 'mm';
+
+    
+}
+
+:root{
+    --primary: #DACEFE;
+    --primary-soft: #DACEFE80;
+    --secondary: #777c77;
+    --secondary-soft: #f2f2f2;
+    --light : #ffffff;
+    --dark : #000000;
+    --br: 5px;
+    --text : #8370c9;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif, 'mm';
+    color: var(--secondary);
+}
+
+.divider{
+    background-color: var(--secondary);
+    height: 5px;
+    margin: 10px 0px;
+}
+
+
+.app{
+    width: 1000px;
+    margin: 100px auto;
+}
+
+.output{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-container{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 100px;
+    border-radius: 20px;
+}
+
+.brand{
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.result-container{
+    display: flex;
+    align-items: center;
+}
+
+.result{
+    font-size: 50px;
+    font-weight: bold;
+}
+.calc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container{
+    width: 200px;
+
+}
+
+.input,.from,.to{
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: var(--br);
+    border: 1px solid var(--secondary);
+}
+
+
+.input {
+    text-align: right;
+}
+
+.container label{
+    display: block;
+}
+
+
+.calc-btn{
+    width: 100%;
+    height: 100%;
+    border-radius: var(--br);
+    border: 1px solid var(--primary);
+    background-color: var(--primary);
+    color: var(--text);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.calc-btn:active{
+    background-color: var(--primary-soft);
+    border: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* This is to remove the arrow of select element in IE */
+select::-ms-expand {	display: none; }
+select{
+    -webkit-appearance: none;
+    appearance: none;
+}
+@-moz-document url-prefix(){
+  .select { width: 110%; background-position: right 30px center !important; border: none !important;}
+}
+
+select:focus,input:focus,button:focus{
+    outline: none;
+}
+
+.history {
+    width: 100%;
+    margin-top: 20px ;
+  }
+  
+.history td, .history th {
+    padding: 8px;
+    border-radius: var(--br);
+}
+
+
+.history tr:nth-child(even){background-color: var(--secondary-soft);}
+  
+.history tr:hover {background-color: #ddd;}
+  
+.history th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--primary);
+    color: var(--text);
+}
+
+.history th:last-child{
+    text-align: right;
+}
+
+.history tr td:last-child{
+    text-align: right;
+}
+
+#rowSpacer td {
+    text-align: center !important;
+}
+
+.mode-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--dark);
+    position: fixed;
+    bottom: 50px ;
+    right: 50px;
+}
+
+.mode-btn .fas{
+    color: var(--light);
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+    .app {
+        width: 96%;
+        margin: 30px auto;
+    }
+    .output{
+        flex-flow: column;
+        align-items: flex-end;
+
+    }
+    .brand-container{
+        width: 100%;
+    }
+    .calc{
+        flex-wrap: wrap;
+    }
+    .container{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .from-container{
+        width: 48%;
+    }
+    .to-container{
+        width: 48%;
+    }
+    .input,.from,.to{
+        padding: 10px;
+        border-radius: var(--br);
+        border: 1px solid var(--secondary);
+    }
+    .calc-btn{
+        padding: 15px 0px;
+    }
+}

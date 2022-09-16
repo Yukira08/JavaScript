@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+#cords {
+    margin-right: 10px;
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+
+.keys{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.piano-key{
+    padding: 10px;
+    margin: 10px 5px;
+    height: 200px;
+    width: 50px;
+   
+}
+
+.piano-key:active{
+    background-color: rgb(101, 247, 247);
+}
+.piano-key p{
+    margin-top: 150px;
+    background-color: black;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    list-style: none;
+    font-size: 20px;
+    font-style: bold;
+}
+
+li{
+    margin: 15px;
+}
+
+#replay{
+    margin-left: 10px;
+    padding: 5px 10px;
+    
+}
+
+#replay img{
+    width: 20px;
+    text-align: center;
+}
