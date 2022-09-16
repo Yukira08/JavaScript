@@ -16,5 +16,5 @@ The individual or multiple images(.jpg,.jpeg,.png) can be uploaded from the uplo
 The Exchange Rate API used : http://forex.cbm.gov.mm/api/latest
 The inputted amount can be converted from selected currency to another selected currency. The converted currency is kept in the local storage and displayed in the Record List. 
 
-**  Further Improvement **
+**Further Improvement** (will do later)
 Add Delete Function in Record List
